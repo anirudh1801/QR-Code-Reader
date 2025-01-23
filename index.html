@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner & Reader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>QR Code Scanner & Reader</h1>
+            <p class="subtitle">Instantly scan QR codes using your camera or upload QR code images from your device</p>
+        </div>
+        
+        <div class="options">
+            <div class="option-box" id="scan-option">
+                <i class="fas fa-camera"></i>
+                <h3>Camera Scan</h3>
+                <p>Use your device's camera to scan QR codes in real-time</p>
+            </div>
+            
+            <div class="option-box" id="upload-option">
+                <i class="fas fa-upload"></i>
+                <h3>Upload Image</h3>
+                <p>Upload a QR code image from your device to scan</p>
+            </div>
+        </div>
+
+        <div id="reader"></div>
+        <div id="preview-container">
+            <img id="preview-image" alt="QR Code Preview">
+        </div>
+
+        <div id="result">
+            <h3><i class="fas fa-check-circle"></i> Scan Result</h3>
+            <div id="qr-result"></div>
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="open-link">
+                    <i class="fas fa-external-link-alt"></i> Open Link
+                </button>
+                <button class="btn btn-secondary" id="copy-text">
+                    <i class="fas fa-copy"></i> Copy Text
+                </button>
+                <button class="btn btn-secondary" id="scan-new">
+                    <i class="fas fa-redo"></i> New Scan
+                </button>
+            </div>
+        </div>
+
+        <div class="error" id="error-message"></div>
+        <div class="creator">
+            Created by <span>Aniruddha Repale</span>
+        </div>
+
+        <input type="file" id="file-input" accept="image/*" style="display: none;">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
