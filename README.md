@@ -27,7 +27,7 @@ A **feature-rich QR Code Scanner and Reader** built using **HTML5**, **CSS3**, a
 3. Start scanning QR codes and enjoy the smooth experience!
 
 <img src="output/img1.png" alt="description">
-<img src="output/img2.png" alt="description" width="700" height="500">
-<img src="output/img3.png" alt="description" width="700" height="500">
-<img src="output/img4.png" alt="description" width="700" height="500">
-<img src="output/img5.png" alt="description" width="700" height="500">
+<img src="output/img2.png" alt="description">
+<img src="output/img3.png" alt="description">
+<img src="output/img4.png" alt="description">
+<img src="output/img5.png" alt="description">
